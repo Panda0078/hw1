@@ -84,6 +84,7 @@ CREATE TABLE movies(
 
 CREATE table top_cast(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
     name TEXT,
     role TEXT,
     movie_id INTEGER
@@ -132,6 +133,201 @@ VALUES (
     "Christopher Nolan"
 );
 
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "Batman Begins",
+    "Christian Bale",
+    "Bruce Wayne",
+    "1"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "Batman Begins",
+    "Michael Caine",
+    "Alfred",
+    "2"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "Batman Begins",
+    "Liam Neeson",
+    "Ra's Al Ghul",
+    "3"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "Batman Begins",
+    "Katie Holmes",
+    "Rachel Dawes",
+    "4"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "Batman Begins",
+    "Gary Oldman",
+    "Commissioner Gordon",
+    "5"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight",
+    "Christian Bale",
+    "Bruce Wayne",
+    "6"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight",
+    "Heath Ledger",
+    "Joker",
+    "7"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight",
+    "Aaron Eckhart",
+    "Harvey Dent",
+    "8"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight",
+    "Michael Caine",
+    "Alfred",
+    "9"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight",
+    "Maggie Gyllenhaal",
+    "Rachel Dawes",
+    "10"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight Rises",
+    "Christian Bale",
+    "Bruce Wayne",
+    "11"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight Rises",
+    "Gary Oldman",
+    "Commissioner Gordon",
+    "12"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight Rises",
+    "Tom Hardy",
+    "Bane",
+    "13"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight Rises",
+    "Joseph Gordon-Levitt",
+    "John Blake",
+    "14"
+);
+
+INSERT INTO top_cast (
+    title,
+    name,
+    role,
+    movie_id
+)  
+VALUES (
+    "The Dark Knight Rises",
+    "Anne Hathaway",
+    "Selina Kyle",
+    "15"
+);
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
@@ -148,7 +344,8 @@ WHERE director = "Christopher Nolan";
 .print "Top Cast"
 .print "========"
 .print ""
-
+SELECT title, name, role 
+FROM top_cast
 
 -- The SQL statement for the cast output
 -- TODO!
