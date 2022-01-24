@@ -344,8 +344,8 @@ WHERE director = "Christopher Nolan";
 .print "Top Cast"
 .print "========"
 .print ""
-SELECT title, name, role 
-FROM top_cast
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT title, name, role 
+FROM top_cast
